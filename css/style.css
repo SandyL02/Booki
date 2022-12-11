@@ -184,16 +184,22 @@ input
     margin:0;
     padding-top: 3px;
 }
-.hebergements
+#hebergements
 {
     display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
 }
 .housing
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 65%;
+    width:63%;
     height: auto;
+    padding:0 25px 0 25px;
+    margin: 40px 0;
+
 }
 .housing-card
 {
@@ -247,11 +253,12 @@ input
     color: #0065FC;
     font-size: 12px;
     padding: 0;
-    margin: 0;
+    margin: 0 -4px 0 0;
 }
 .stars
 {
-    margin:0 0 3px 10px;
+    margin:0 0 0px 10px;
+    
 }
 .afficherplus
 {
@@ -270,5 +277,74 @@ input
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width:30%
+    width:33%;
+    padding: 41px 0 34px 0;
+    margin: 40px 0 40px 0;
 }
+.popularity-card h3
+{
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+.popularity-text p
+{
+    font-size: 14px;
+    margin: 10px 0 35px 10px;
+    
+}
+.popularity-card h2
+{
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+.popularity-card
+{
+    width: 90%;
+    height : 20%;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10% 5% 10% 5%;
+
+    
+}
+
+.popularity-card a
+{
+    display: flex;
+   
+
+}
+
+.popularity-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.popularity-card img
+{
+    width: 137px;
+    height: 138px;
+    border-radius: 20px 0 0 20px;
+    object-fit:cover;
+    margin: 4px 0px 4px 4px;
+
+}
+
+.popularity-text
+{
+    width:169px;
+   
+    
+}
+.fa-chart-line
+{
+    color: #0065FC;
+}
+

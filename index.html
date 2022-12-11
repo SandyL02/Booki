@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <script src="https://kit.fontawesome.com/02fbef9d69.js" crossorigin="anonymous"></script>
         <title>Booki</title>
+        <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
 
@@ -116,12 +117,16 @@
                 <p class="afficherplus">Afficher plus</p>
             </div>
             <div class="populaires">
-                <div>
+                <div class="popularity-title">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
+                <div class="popularity-cards">
+                    <!-- ^ pour flex uniquementles cards et pas le titre -->
                 <article class="popularity-card"><a href="#">
                     <img src="images/housing/le_soleil_du_matin.jpg"/>
+                    <div class="popularity-text">
+                        <!-- ^pour flex le texte à droite de l'image -->
                     <h3>Hôtel Le soleil du matin</h3>
                     <p>Nuit à partir de 128€</p>
                     <div class=" stars">
@@ -129,10 +134,11 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star empty"></i></a></div>
+                    <i class="fa-solid fa-star empty"></i></div></div></a>
                 </article>
                 <article class="popularity-card"><a href="#">
                     <img src="images/housing/au_coeur_de_l_eau.jpg"/>
+                    <div class="popularity-text">
                     <h3>Chambres d'hôtes Au cœur de l'eau</h3>
                     <p>Nuit à partir de 71€</p>
                     <div class=" stars">
@@ -140,10 +146,11 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star empty"></i></a></div>
+                    <i class="fa-solid fa-star empty"></i></div></div></a>
                 </article>
                 <article class="popularity-card"><a href="#">
                     <img src="images/housing/bleu_et_blanc.jpg"/>
+                    <div class="popularity-text">
                     <h3>Hôtel Bleu et Blanc</h3>
                     <p>Nuit à partir de 68€</p>
                     <div class=" stars">
@@ -151,8 +158,8 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star empty"></i></a></div>
-                </article>
+                    <i class="fa-solid fa-star empty"></i></div></div></a>
+                </article></div>
             </div>
 
         </section>
