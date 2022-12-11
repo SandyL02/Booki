@@ -285,14 +285,17 @@ input
 {
     font-weight: 700;
     font-size: 16px;
-    margin-left: 10px;
+    margin: 0 0 5px 10px;
+    
 }
 
 
 .popularity-text p
 {
     font-size: 14px;
-    margin: 10px 0 35px 10px;
+    margin: 0px 0 0px 10px;
+    display: flex;
+    /* justify-content: space-around; */
     
 }
 .popularity-card h2
@@ -309,15 +312,13 @@ input
     border-radius: 20px;
     background-color: white;
     margin: 10% 5% 10% 5%;
-
+    
     
 }
 
 .popularity-card a
 {
     display: flex;
-   
-
 }
 
 .popularity-title
@@ -337,9 +338,12 @@ input
 
 }
 
-.popularity-text
+.popularity-description
 {
     width:169px;
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column; 
    
     
 }
