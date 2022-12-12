@@ -125,36 +125,50 @@ input
 .filtres
 {
     display: flex;
+    justify-content:left;
     width: 100%;
     font-size: 18px;
     font-weight: 700; 
+    
 }
 .filtres p
 {
     padding-top: 17px;
 }
+
 .filtres li
 {
-    padding: 12px 20px 12px 10px;
-    margin: 10px;
+    padding: 0px 20px 12px 10px;
+    margin:10px 4px 10px 15px;
     font-size: 17px;
     font-weight: 700;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
     width:fit-content;
+    align-items: center;
 }
+.filtres li p
+{
+    padding: 0;
+    margin:14px 0px 0 0;
+}
+
 
 .filtres ul
 {
-     display:flex;
+    display:flex;
     flex-wrap:wrap;
+    padding-left: 3%;
+    width:fit-content;
 }
 
 .filtres .fa-solid
 {
     color: #0065FC;
     font-size: 20px;
-    padding: 0 10px 0px 10px ;
+    padding: 10px 10px 0px 10px ;
 }
 .filtres li:hover
 {
@@ -182,7 +196,7 @@ input
     font-size: 16px;
     font-weight: 400;
     margin:0;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 #hebergements
 {
@@ -203,7 +217,6 @@ input
     flex-direction: column;
     justify-content: space-around;
     
-
 }
 .housing-card
 {
@@ -285,6 +298,7 @@ input
     width:33%;
     padding: 22px 0 34px 0;
     margin: 40px 0 40px 0;
+    
    
 }
 .popularity-card h3
