@@ -58,7 +58,7 @@ a, a:visited {
 h1 {
     font-weight: 700;
     margin:20px 0 0 0;
-    
+    font-size: 22px;
 }
 
 p {
@@ -118,6 +118,7 @@ input {
     width: 100%;
     font-size: 18px;
     font-weight: 700; 
+    margin-bottom: 30px;
 }
 .filters p {
     padding-top: 17px;
@@ -183,7 +184,6 @@ input {
 
 #housing-menu {
     display: flex;
-    flex-wrap:wrap;
     justify-content: space-between;
 
 }
@@ -396,8 +396,51 @@ footer h4 {
     font-weight: 700;
 }
 
-@media screen and (min-device-width: 768px ) and (max-width: 991px ){
+@media screen and (min-width: 768px ) and (max-width: 991px ){
+    body {
+        background-color: bisque;
+        padding: 0 35px;
+    }
+    
+    #housing-menu {
+        flex-direction: column;
+    }
 
+    .housing {
+        width: 100%;
+    }
+
+    .popularity-menu {
+        width: 100%;
+    }
+
+    .popularity-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .popularity-card {
+        margin:0;
+        padding: 0;
+        width: 30%;
+    }
+
+    .popularity-card img {
+        width: 35%;
+    }
+
+    .popularity-title {
+        padding: 0 3% 0 3%;
+    }
+
+    .activity-card {
+        height: 270px;
+        width: 22%;
+    }
+
+    .activity-card img {
+        height: 78%;
+    }
 
 
 
@@ -418,6 +461,15 @@ footer h4 {
 
 @media screen and (max-width:767px){
    
+    body {
+         background-color: pink;
+        padding: 0 21px ;
+    }
+
+    #housing-menu {
+        flex-direction: column-reverse;
+
+    }
 
 
 
