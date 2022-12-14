@@ -201,6 +201,11 @@ input {
     justify-content: space-around;
 }
 
+#housing-anchor {
+    width:0px;
+    height:0px;
+}
+
 .housing-card {
     background-color: white;
     border-radius: 20px;
@@ -371,6 +376,11 @@ input {
     font-size: 22px;
 }
 
+#activity-anchor {
+    width:0px;
+    height:0px;
+}
+
 .activity-card h3 {
     font-size: 16px;
     font-weight: 700;
@@ -409,7 +419,6 @@ footer h4 {
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     body {
-        background-color: bisque;
         padding: 0 35px;
     }
     
@@ -514,7 +523,6 @@ footer h4 {
 @media screen and (max-width:767px){
    
     body {
-        /* background-color: pink; */
         padding: 0;
     }
 
@@ -696,11 +704,18 @@ footer h4 {
 
     .activity-card img {
         height: 134px;
+        
+    }
+
+    #activity-menu h2 {
+        padding-left: 7%;
+
     }
 
     footer {
         flex-direction: column;
         padding: 0 0 20% 5%;
+
     }
 
     footer h4 {
@@ -713,9 +728,29 @@ footer h4 {
     }
 
 
+/* tentative d'un header fix pour smartphone */
 
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
 
+    main {
+        margin-top: 185px;
+    }
 
+    #housing-anchor {
+        position:relative;
+        bottom: 156px;
+    }
+
+    #activity-anchor {
+        position:relative;
+        bottom:175px;
+    }
 
 
 

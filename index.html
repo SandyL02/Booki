@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/02fbef9d69.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="images/Icon_Booki.png" type="image/x-icon">
         <title>Booki</title>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
@@ -11,11 +12,11 @@
     <body>
         <header>
             <div class="logo">
-            <img src="images/Booki.png" alt="logo de booki" id="logobooki"/></div>
+            <a href="#"><img src="images/Booki.png" alt="logo de booki" id="logobooki"/></a></div>
             <nav>
                 <div class= "menu">
-                    <a href="#housing-menu">Hébergements</a>
-                    <a href="#activity-menu">Activités</a>
+                    <a href="#housing-anchor">Hébergements</a>
+                    <a href="#activity-anchor">Activités</a>
                 </div>
             </nav>
         </header>
@@ -44,7 +45,8 @@
             </form>
         </section>
         <section id="housing-menu">
-            <div class="housing"> 
+            <div class="housing" > 
+                <div id="housing-anchor"></div>
                 <h2>Hébergements à Marseille</h2>
                     <div class="housing-cards">
                         <!-- ^pour appliquer le flex que aux cards et pas au titre -->
@@ -170,6 +172,7 @@
 
         </section>
         <section id="activity-menu">
+                <div id="activity-anchor"></div>
                 <h2>Activités à Marseille</h2>
                 <div class="activity-cards">
                         <article class="activity-card"><a href="#">
