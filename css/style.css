@@ -204,7 +204,6 @@ input {
 .housing-card {
     background-color: white;
     border-radius: 20px;
-    /* width:246px; */
     width : 32%;
     height:199px;
     padding:3px 3px 0px 3px;
@@ -215,7 +214,6 @@ input {
 
 .housing img {
     width:99.5%;
-    /* height:124px; */
     height:calc(120px - 0.4vw);
     border-radius: 20px 20px 0 0;
     margin-bottom: 0;
@@ -332,7 +330,7 @@ input {
 
 .popularity-card img {
     width: 40%;
-    height: 138px;
+    height: 136px;
     border-radius: 20px 0 0 20px;
     object-fit:cover;
     margin: 4px 0px 4px 4px;
@@ -409,7 +407,7 @@ footer h4 {
 }
 
 
-@media screen and (min-width: 768px ) and (max-width: 991px ){
+@media screen and (min-width: 768px) and (max-width: 991px){
     body {
         background-color: bisque;
         padding: 0 35px;
@@ -513,7 +511,7 @@ footer h4 {
     }
 }
 
-@media  screen and (max-width:767px ) {
+@media screen and (max-width:767px){
    
     body {
         /* background-color: pink; */
@@ -552,21 +550,166 @@ footer h4 {
         font-weight: 500;
     }
 
+    .menu-section {
+        padding: 0 5%;
+    }
+
+    .menu-section h1 {
+        margin-bottom: 3%;
+    }
+
+    .search-desktop {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display:block;
+        font-size: 16px;
+    }
+
+    button {
+        width: 12%;
+    }
+
+    .location {
+        width:12%;
+    }
+
+    .search {
+        width:72%;
+    }
+
+    .searchbar {
+        justify-content: center;
+        margin-top: 6%;
+    }
+
+    .filters {
+        flex-direction: column;
+
+    }
+
+    .filters p {
+        padding:0;
+        margin: 0%;
+    }
+
+    .filters li{
+        font-size: 11px;
+        width:160px;
+        height: 50px;
+        padding:0 0 14px 0;
+        justify-content: left;
+        margin: 5% 1% 0% 0;
+    }
+
+    .filters ul {
+        padding: 0;
+    }
+
+    .fa-info {
+        font-size:12px;
+    }
+
+    .info {
+        padding: 2.5%;
+    }
+
+    .infos p {
+        padding-top: 0;
+    }
+
+    
+
+    .popularity-menu {
+        width:100%;
+        border-radius: 0%;
+        margin-bottom: 0;
+    }
+
+    .popularity-card {
+        width: 334px;
+        height: 144px;
+        margin: 2% 0;
+    }
+
+    .popularity-card img {
+        width: 137px;
+        height:136px;
+    }
+
+    .popularity-cards {
+        align-items: center;
+    }
+
     #housing-menu {
         flex-direction: column-reverse;
     }
 
     .housing {
+        margin-top: 0%;
         width: 100%;
-        background-color: none;
+        background-color: white;
     }
 
     .housing-cards {
         flex-direction: column;
+        align-content: center;
     }
 
-    .popularity-menu {
-        width:100%;
+    .housing-card {
+       width: 335px;
+       height: 199px;
+    }
+
+    .housing-card img {
+        height:124px;
+    }
+
+    .housing-card h3 {
+        font-size: 16px;
+    }
+
+    .housing-card p {
+        font-size: 14px;
+    }
+
+    .housing.fa-star {
+        font-size: 12px;
+    }
+
+    .load-more {
+        display: none;
+    }
+
+    .activity-cards {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .activity-card {
+        width: 334px;
+        height: 190px;
+        margin-bottom: 7%;
+    }
+
+    .activity-card img {
+        height: 134px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0 0 20% 5%;
+    }
+
+    footer h4 {
+        margin-top: 0;
+        padding-top: 15%;
+    }
+
+    footer ul {
+        margin-bottom: 0 ;
     }
 
 
