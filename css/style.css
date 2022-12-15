@@ -9,7 +9,7 @@
 body {
     margin: 0 auto;
     padding: 0 50px;
-    max-width: 1400px;
+    max-width: 1400px; /* largeur max 1400px comme demandé dans l'énoncé*/
 }
 
 header {
@@ -20,19 +20,17 @@ header {
 ul {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: 0; /* ul par défaut à un margin à gauche */
 }
 
 #logobooki {
     width: 61.09px;
     height: 19px;
-    left: 0px;
-    top: 0px;
     margin-top:44px;
 }
 
 a, a:visited {
-     text-decoration: none;
+     text-decoration: none; /* désactiver les surlignages des liens et leur couleur associée */
      color:black;
 }
 
@@ -45,15 +43,13 @@ a, a:visited {
     
     border-top:2px #0065FC solid;
     color: #0065FC;
-    padding-top:0px;
+    padding-top:0px; /* sinon le texte se soulève quand on passe dessus */
     font-weight: 500;
 }
 
 .menu a {
     line-height: 100px;
-    display:block;
     padding: 2px 15px 0 15px;
-
 }
 
 h1 {
@@ -62,7 +58,7 @@ h1 {
     font-size: 22px;
 }
 
-p {
+.menu-section p {
     margin: 8px 0;
 }
 
@@ -71,7 +67,6 @@ p {
 }
 
 .fa-location-dot {
-    
     font-size: 18px;
 }
 
@@ -83,15 +78,15 @@ p {
     justify-content: center;
     display: flex;
     border-radius: 15px 0px 0px 15px;
-    margin-right: 0;
     border: solid 1px #F2F2F2;
 }
 
 .search {
     border: solid 1px #F2F2F2;
-    margin-left: 0;
-    margin-right: 0;
     width:282px;
+    font-size: 18px;
+    font-weight:700;
+    padding-left: 16px;
 }
 button {
     border: solid 1px #0065FC;
@@ -103,11 +98,7 @@ button {
     font-weight:700;
     cursor: pointer;
 }
-input {
-    font-size: 18px;
-    font-weight:700;
-    padding-left: 16px;
-}
+
 .searchbar {
     margin-top: 20px;
     margin-bottom: 25px;
@@ -115,7 +106,6 @@ input {
 }
 .filters {
     display: flex;
-    justify-content:left;
     width: 100%;
     font-size: 18px;
     font-weight: 700; 
@@ -134,7 +124,6 @@ input {
     border-radius: 25px;
     display: flex;
     justify-content: space-around;
-    width:fit-content;
     align-items: center;
 }
 .filters li p {
@@ -146,7 +135,6 @@ input {
     display:flex;
     flex-wrap:wrap;
     padding-left: 3%;
-    width:fit-content;
 }
 
 .filters .fa-solid {
@@ -183,10 +171,9 @@ input {
     padding-top: 5px;
 }
 
-#housing-menu {
+.housing-menu {
     display: flex;
     justify-content: space-between;
-
 }
 
 .housing {
@@ -214,12 +201,11 @@ input {
     padding:3px 3px 0px 3px;
     margin: 0 0px 10px 0;
     box-shadow: 0 0 8px 2px #D9D9D9;
-    
 }
 
 .housing img {
     width:99.5%;
-    height:calc(120px - 0.4vw);
+    height:calc(120px - 0.4vw); /* mise en place de calcul pour adapté la hauteur de l'image selon la résolution de l'écran (viewport) */
     border-radius: 20px 20px 0 0;
     margin-bottom: 0;
     object-fit:cover;
@@ -241,7 +227,7 @@ input {
 
 .housing-card h3 {
     font-weight: 700;
-    font-size: calc(13px + 0.25vw);
+    font-size: calc(13px + 0.25vw); /* adapter les h3 à la taille de l'écran*/
     padding: 0;
     margin:2.5px 0 1.5px 10px;
 }
@@ -257,7 +243,7 @@ input {
     color: #0065FC;
     font-size: 12px;
     padding: 0;
-    margin: 0 -4px 0 0;
+    margin: 0 -4px 0 0; /* une margin négative pour que les étoiles se rapprochent les unes des autres comme sur la maquette */
 }
 
 .housing .fa-star {
@@ -266,7 +252,6 @@ input {
 
 .stars {
     margin:0 0 0px 10px;
-    
 }
 
 .load-more {
@@ -285,7 +270,7 @@ input {
     border-radius: 20px;
     width:33%;
     padding: 22px 0 34px 0;
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
 }
 
 .popularity-card h3 {
@@ -372,7 +357,7 @@ input {
     justify-content: space-between;
 }
 
-#activity-menu h2 {
+.activity-menu h2 {
     font-size: 22px;
 }
 
@@ -416,13 +401,15 @@ footer h4 {
     font-weight: 700;
 }
 
+/* passage en mode tablette */
 
 @media screen and (min-width: 768px) and (max-width: 991px){
+
     body {
         padding: 0 35px;
     }
     
-    #housing-menu {
+    .housing-menu {
         flex-direction: column;
     }
 
@@ -488,12 +475,10 @@ footer h4 {
     }
 
     .filters p {
-        /* font-size: 16px; */
         font-size: calc(14px + 0.2vw);
     }
 
     .filters .fa-solid {
-        /* font-size: 18px; */
         font-size:calc(16px + 0.2vw);
         padding-left: 5% ;
         padding-top: 6.5%;
@@ -501,24 +486,16 @@ footer h4 {
 
     .filters li {
         margin-left: 1.1%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .filters li p {
         padding: 0;
         margin: 11px 0 0 0;
-
-        white-space: nowrap; /*ne pas aller à la ligne*/
-        
-    }
-
-    .filters {
-        width: 100%;
-    
+        white-space: nowrap; /*ne pas aller à la ligne pour coller à la maquette*/ 
     }
 }
+
+/* passage en mode smartphone */
 
 @media screen and (max-width:767px){
    
@@ -534,7 +511,6 @@ footer h4 {
 
     header {
         display: block;
-    
     }
 
     .menu a {
@@ -550,7 +526,6 @@ footer h4 {
     }
 
     .menu a:hover {
-    
         border-top: none;
         border-bottom: 3px #0065FC solid;
         color: #0065FC;
@@ -594,7 +569,6 @@ footer h4 {
 
     .filters {
         flex-direction: column;
-
     }
 
     .filters p {
@@ -602,7 +576,7 @@ footer h4 {
         margin: 0%;
     }
 
-    .filters li{
+    .filters li {
         font-size: 11px;
         width:160px;
         height: 50px;
@@ -627,8 +601,6 @@ footer h4 {
         padding-top: 0;
     }
 
-    
-
     .popularity-menu {
         width:100%;
         border-radius: 0%;
@@ -636,13 +608,13 @@ footer h4 {
     }
 
     .popularity-card {
-        width: 334px;
+        width: calc(295px + 0.1vw);
         height: 144px;
         margin: 2% 0;
     }
 
     .popularity-card img {
-        width: 137px;
+        width: calc(100px  + 0.1vw);
         height:136px;
     }
 
@@ -650,7 +622,7 @@ footer h4 {
         align-items: center;
     }
 
-    #housing-menu {
+    .housing-menu {
         flex-direction: column-reverse;
     }
 
@@ -666,7 +638,7 @@ footer h4 {
     }
 
     .housing-card {
-       width: 335px;
+       width: calc(294px + 0.1vw);
        height: 199px;
     }
 
@@ -693,29 +665,25 @@ footer h4 {
     .activity-cards {
         flex-direction: column;
         align-items: center;
-
     }
 
     .activity-card {
-        width: 334px;
+        width: calc(293px + 0.1vw);
         height: 190px;
         margin-bottom: 7%;
     }
 
     .activity-card img {
-        height: 134px;
-        
+        height: 134px; 
     }
 
-    #activity-menu h2 {
+    .activity-menu h2 {
         padding-left: 7%;
-
     }
 
     footer {
         flex-direction: column;
         padding: 0 0 20% 5%;
-
     }
 
     footer h4 {
@@ -727,37 +695,28 @@ footer h4 {
         margin-bottom: 0 ;
     }
 
-
-/* tentative d'un header fix pour smartphone */
+/* header fix pour smartphone */
 
     header {
         background-color: white;
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 1; /* passer le header au premier plan */
     }
 
     main {
-        margin-top: 185px;
+        margin-top: 185px; /* descendre le main de 185 px pour que le header fix ne le cache pas*/
     }
 
-    #housing-anchor {
+    #housing-anchor { /*  descendre les ancres de tant de pixels quand on utilise les liens hébergements et activités pour que le header ne les cache pas*/
         position:relative;
         bottom: 156px;
     }
 
-    #activity-anchor {
+    #activity-anchor { 
         position:relative;
         bottom:175px;
     }
-
-
-
-
-
-
-
-
 
 }
