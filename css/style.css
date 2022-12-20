@@ -129,6 +129,7 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+
 .filters li p {
   padding: 0;
   margin: 14px 0px 0 0;
@@ -334,6 +335,7 @@ button {
   justify-content: space-around;
   flex-direction: column;
 }
+
 .fa-chart-line {
   color: #0065fc;
 }
