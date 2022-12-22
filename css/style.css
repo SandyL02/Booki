@@ -8,7 +8,8 @@
 body {
   margin: 0 auto;
   padding: 0 50px;
-  max-width: 1400px; /* largeur max 1400px comme demandé dans l'énoncé*/
+  max-width: 1400px;
+  /* largeur max 1400px comme demandé dans l'énoncé*/
 }
 
 header {
@@ -19,8 +20,11 @@ header {
 ul {
   list-style: none;
   display: flex;
-  margin: 0; /* ul par défaut à un margin à gauche */
+  margin: 0;
+  /* ul par défaut à un margin à gauche */
 }
+
+/* PARTIE NAV */
 
 #logobooki {
   width: 61.09px;
@@ -30,7 +34,8 @@ ul {
 
 a,
 a:visited {
-  text-decoration: none; /* désactiver les soulignages des liens et leur couleur associée */
+  text-decoration: none;
+  /* désactiver les soulignages des liens et leur couleur associée */
   color: black;
 }
 
@@ -42,7 +47,8 @@ a:visited {
 .menu a:hover {
   border-top: 2px #0065fc solid;
   color: #0065fc;
-  padding-top: 0px; /* sinon le texte se soulève quand on passe dessus */
+  padding-top: 0px;
+  /* sinon le texte se soulève quand on passe dessus */
   font-weight: 500;
 }
 
@@ -105,6 +111,8 @@ button {
   margin-bottom: 25px;
   display: flex;
 }
+
+/* PARTIE FILTRE */
 
 .filters {
   display: flex;
@@ -176,6 +184,8 @@ button {
   padding-top: 5px;
 }
 
+/* PARTIE HEBERGEMENT */
+
 .housing-menu {
   display: flex;
   justify-content: space-between;
@@ -231,7 +241,8 @@ button {
 
 .housing-card h3 {
   font-weight: 700;
-  font-size: calc(13px + 0.25vw); /* adapter les h3 à la taille de l'écran*/
+  font-size: calc(13px + 0.25vw);
+  /* adapter les h3 à la taille de l'écran*/
   padding: 0;
   margin: 2.5px 0 1.5px 10px;
 }
@@ -247,7 +258,8 @@ button {
   color: #0065fc;
   font-size: 12px;
   padding: 0;
-  margin: 0 -4px 0 0; /* une margin négative pour que les étoiles se rapprochent les unes des autres comme sur la maquette */
+  margin: 0 -4px 0 0;
+  /* une margin négative pour que les étoiles se rapprochent les unes des autres comme sur la maquette */
 }
 
 .housing .fa-star {
@@ -268,6 +280,8 @@ button {
 .empty {
   color: #f2f2f2;
 }
+
+/* PARTIE POPULAIRES */
 
 .popularity-menu {
   background-color: #f2f2f2;
@@ -340,6 +354,8 @@ button {
   color: #0065fc;
 }
 
+/* PARTIE ACTIVITES */
+
 .activity-card {
   box-shadow: 0 0 8px 2px #d9d9d9;
   background-color: white;
@@ -376,6 +392,8 @@ button {
   margin: 0;
   padding: 5% 2% 1% 5%;
 }
+
+/* FOOTER */
 
 footer {
   display: flex;
@@ -432,6 +450,8 @@ footer h4 {
     font-size: 12px;
   }
 
+  /* PARTIE POPULAIRES */
+
   .popularity-menu {
     width: 100%;
   }
@@ -455,6 +475,8 @@ footer h4 {
     padding: 0 3% 0 3%;
   }
 
+  /* PARTIE ACTIVITES */
+
   .activity-card {
     height: 270px;
     width: 22%;
@@ -471,6 +493,8 @@ footer h4 {
   footer {
     padding-right: 10%;
   }
+
+  /* PARTIE FILTRES */
 
   .filters ul {
     padding-left: 0;
@@ -494,13 +518,16 @@ footer h4 {
   .filters li p {
     padding: 0;
     margin: 11px 0 0 0;
-    white-space: nowrap; /*ne pas aller à la ligne pour coller à la maquette*/
+    white-space: nowrap;
+    /*ne pas aller à la ligne pour coller à la maquette*/
   }
 }
 
 /* passage en mode smartphone */
 
 @media screen and (max-width: 767px) {
+
+  /* MENU NAV ET FILTRES */
   body {
     padding: 0;
   }
@@ -603,6 +630,8 @@ footer h4 {
     padding-top: 0;
   }
 
+  /* PARTIE POPULAIRES */
+
   .popularity-menu {
     width: 100%;
     border-radius: 0%;
@@ -610,19 +639,25 @@ footer h4 {
   }
 
   .popularity-card {
-    width: calc(295px + 0.1vw);
+    width: 90%;
     height: 144px;
     margin: 2% 0;
   }
 
   .popularity-card img {
-    width: calc(100px + 0.1vw);
+    width: 40%;
     height: 136px;
   }
 
   .popularity-cards {
     align-items: center;
   }
+
+  .popularity-description {
+    width: 60%;
+  }
+
+  /*  PARTIE HEBERGEMENT */
 
   .housing-menu {
     flex-direction: column-reverse;
@@ -640,7 +675,7 @@ footer h4 {
   }
 
   .housing-card {
-    width: calc(294px + 0.1vw);
+    width: 95%;
     height: 199px;
   }
 
@@ -664,13 +699,15 @@ footer h4 {
     display: none;
   }
 
+  /* PARTIE ACTIVITES */
+
   .activity-cards {
     flex-direction: column;
     align-items: center;
   }
 
   .activity-card {
-    width: calc(293px + 0.1vw);
+    width: 90%;
     height: 190px;
     margin-bottom: 7%;
   }
@@ -682,6 +719,12 @@ footer h4 {
   .activity-menu h2 {
     padding-left: 7%;
   }
+
+  .activity-card h3 {
+    padding-top: 3%;
+  }
+
+  /* PARTIE FOOTER */
 
   footer {
     flex-direction: column;
@@ -697,18 +740,20 @@ footer h4 {
     margin-bottom: 0;
   }
 
-  /* header fix pour smartphone */
+  /* PARTIE HEADER FIXE SMARTPHONE */
 
   header {
     background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1; /* passer le header au premier plan */
+    z-index: 1;
+    /* passer le header au premier plan */
   }
 
   main {
-    margin-top: 185px; /* descendre le main de 185 px pour que le header fix ne le cache pas*/
+    margin-top: 185px;
+    /* descendre le main de 185 px pour que le header fix ne le cache pas*/
   }
 
   #housing-anchor {
